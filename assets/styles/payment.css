@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #E5F2F8;
+    color: #333;
+}
+
+.payment-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-section, .summary-section {
+    width: 45%;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+form label {
+    display: inline;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.exp-cvv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.exp-cvv div {
+    width: 48%;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.pay-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.pay-btn:hover {
+    background-color: #218838;
+}
+
+.privacy-text {
+    font-size: 0.8rem;
+    color: #777;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+
+
+.summary-section h2 {
+    text-align: left;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.order-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.order-item p {
+    flex: 1;
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+.discount-code {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.discount-code input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.apply-btn {
+    background-color: #007BFF;
+    color: white;
+    height: 10px;
+    padding: 20px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.apply-btn:hover {
+    background-color: #0056b3;
+}
+
+.order-totals {
+    margin-top: 20px;
+}
+
+.order-totals p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.order-totals h3 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.tax-info {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: #777;
+}

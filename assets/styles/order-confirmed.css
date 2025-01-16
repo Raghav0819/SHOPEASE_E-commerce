@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #E5F2F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.confirmation-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+}
+
+.confirmation-box {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 40px;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    color: #28a745;
+    font-size: 2.5rem;
+}
+
+.header h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.header p.thank-you-text {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.success-icon {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.order-details {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.order-details h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.order-details p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.actions {
+    margin-top: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.primary-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: #218838;
+}
+
+.secondary-btn {
+    background-color: white;
+    color: #28a745;
+    border: 2px solid #28a745;
+}
+
+.secondary-btn:hover {
+    background-color: #28a745;
+    color: white;
+}

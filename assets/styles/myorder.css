@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #E5F2F8;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo h2 {
+    font-size: 35px;
+    color: #070707;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-right: 350px;
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 10px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.orders-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.highlight {
+    color: #0056b3;
+}
+
+.item-count {
+    font-size: 18px;
+    color: #666;
+}
+
+.order-item {
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-image img {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.order-details {
+    flex: 1;
+}
+
+.order-details h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.brand-name, .price {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.order-info {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.add-to-cart {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.cancel-order {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.order-summary {
+    text-align: right;
+    min-width: 200px;
+}
+
+.order-summary p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.view-details {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}

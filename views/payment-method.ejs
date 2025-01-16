@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Methods - Shopease</title>
+    <link rel="stylesheet" href="/styles/payment-method.css">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>SHOPEASE</h2>
+        </div>
+    </header>
+
+    <div class="payment-container">
+        <h1>Payment Methods</h1>
+        <p class="subtitle">Choose payment mode</p>
+
+        <p>Your Total: <span id="total-amount">Rs. 0/-</span></p>
+
+        <div class="payment-options">
+            <div class="option">
+                <img src="/images/cod.png" alt="Cash on Delivery">
+                <p>Cash on Delivery</p>
+            </div>
+
+            <div class="option">
+                <img src="/images/upi.png" alt="UPI">
+                <p>UPI</p>
+            </div>
+
+            <div class="option active">
+                <img src="/images/cards.png" alt="Credit/Debit Card">
+                <a href="/payment1">Credit/Debit Card</a>
+            </div>
+
+            <div class="option">
+                <img src="/images/images (3).png" alt="Wallets">
+                <p>Wallets</p>
+            </div>
+
+            <div class="option">
+                <img src="/images/pngtree-vector-internet-banking-icon-png-image_4101293.jpg" alt="Net Banking">
+                <p>Net Banking</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Get the URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const totalAmount = urlParams.get('total');
+
+        // If the total is available, update the total on the page
+        if (totalAmount) {
+            document.getElementById('total-amount').textContent = `Rs. ${parseFloat(totalAmount).toLocaleString()}/-`;
+        }
+    </script>
+</body>
+</html>

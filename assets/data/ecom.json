@@ -1,0 +1,155 @@
+{
+    "siteName": "Shopease",
+    "categories": [
+      "Shirt",
+      "T-Shirt",
+      "Shoes",
+      "Jeans",
+      "Cargos",
+      "Accessories"
+    ],
+    "heroSection": [
+      {
+        "type": "Trending",
+        "image": "Figma/Trending image.avif",
+        "description": "Trending - Shop Now"
+      },
+      {
+        "type": "Top Deals",
+        "image": "Figma/top deals image.jpeg",
+        "description": "Top Deals - 40-80% OFF"
+      },
+      {
+        "type": "New Arrivals",
+        "image": "Figma/new arrivals.webp",
+        "description": "New Arrivals - Shop Now"
+      }
+    ],
+    "products": [
+      {
+        "productId": "product1",
+        "name": "Graphic printed T-shirt",
+        "image": "/images/Black Shirt.jpg",
+        "price": 1299
+      },
+      {
+        "productId": "product2",
+        "name": "Typographic T-shirt",
+        "image": "/images/Black Shirt.jpg",
+        "price": 999
+      },
+      { 
+        "productId": "product3",
+        "name": "Olive Cargo",
+        "image": "/images/Blue OverShirt.jpg",
+        "price": 1599
+      },
+      { 
+        "productId": "product4",
+        "name": "Overshirt",
+        "image": "/images/Brown Cargo Pant Men.jpg",
+        "price": 1399
+      },
+      { 
+        "productId": "product5",
+        "name": "Dark Brown Cargo",
+        "image": "/images/Brown Cargo.jpg",
+        "price": 11999
+      },
+      { 
+        "productId": "product6",
+        "name": "Dark Brown Cargo",
+        "image": "/images/Dark Brown Cargo.jpg",
+        "price": 15999
+      },
+      { 
+        "productId": "product7",
+        "name": "Light blue denims",
+        "image": "Figma/Beige Pyjama.jpg",
+        "price": 1299
+      },
+      { 
+        "productId": "product8",
+        "name": "Mens Pink Shirt",
+        "image": "/images/Mens Pink Shirt.jpg",
+        "price": 1399
+      },
+      { 
+        "productId": "product9",
+        "name": "Mens Check Shirt",
+        "image": "/images/Mens Check Shirt.jpg",
+        "price": 1399
+      },
+      { 
+        "productId": "product10",
+        "name": "Mens OverShirt",
+        "image": "/images/Mens OverShirt.jpg",
+        "price": 1399
+      },
+      { 
+        "productId": "product11",
+        "name": "OverShirt Blue Mens",
+        "image": "/images/OverShirt Blue Mens.jpg",
+        "price": 1399
+      },
+      { 
+        "productId": "product12",
+        "name": "Olive Over Shirt",
+        "image": "/images/Olive Over Shirt.jpg",
+        "price": 1399
+      },
+      { 
+        "productId": "product13",
+        "name": "Purple OverShirt",
+        "image": "/images/Purple OverShirt.jpg",
+        "price": 1399
+      },
+      { 
+        "productId": "product14",
+        "name": "Nike Dunks",
+        "image": "/images/shoes.jpg",
+        "price": 13999
+      },
+      { 
+        "productId": "product15",
+        "name": "Dark Brown Cargo",
+        "image": "/images/Dark Brown Cargo.jpg",
+        "price": 1399
+      },
+      { 
+        "productId": "product16",
+        "name": "Mens Grey Over Shirt",
+        "image": "/images/Mens Grey Over Shirt.jpg",
+        "price": 1399
+      },
+      { 
+        "productId": "product17",
+        "name": "Navy Blue Cotton Shirt",
+        "image": "/images/Navy Blue Cotton Shirt.jpg",
+        "price": 1399
+      }
+    ],
+    "footerLinks": [
+      {
+        "text": "FAQ",
+        "href": "#"
+      },
+      {
+        "text": "Contact Us",
+        "href": "#"
+      },
+      {
+        "text": "Terms of Use",
+        "href": "#"
+      },
+      {
+        "text": "Privacy Policy",
+        "href": "#"
+      },
+      {
+        "text": "Return Policy",
+        "href": "#"
+      }
+    ]
+  }
+  

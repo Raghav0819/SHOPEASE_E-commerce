@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color:#E5F2F8;
+}
+
+.container {
+    width: 1000px;
+    height: 700px;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.offer-banner {
+    background-color: #f2ead3;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.offer-text h2 {
+    color: #b3393b;
+    margin-bottom: 5px;
+}
+
+.offer-text p {
+    color: #333;
+    margin: 2px 0;
+}
+
+.offer-text .code {
+    font-size: 14px;
+    color: #b3393b;
+}
+
+.offer-image img {
+    margin-right: 100px;
+    width: 1000px;
+    height: 250px;
+}
+
+.form-container {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.highlight {
+    color: #3b3b3b;
+}
+
+.input-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.country-code {
+    padding: 12px;
+    background-color: #f3f3f3;
+    color: #999;
+}
+
+input[type="text"] {
+    border: none;
+    padding: 12px;
+    flex: 1;
+    outline: none;
+}
+
+.policy-text {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.policy-text a {
+    color: #b3393b;
+    text-decoration: none;
+}
+
+.btn-continue {
+    background-color: #e60000;
+    color: white;
+    border: none;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.signup-text {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.signup-text a {
+    color: #b3393b;
+    text-decoration: none;
+}

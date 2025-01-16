@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="/styles/cart.css">
+    <script src="/cart.js" defer></script> <!-- Include JS -->
+</head>
+<body>
+    <div class="cart-container">
+        <h1>SHOPPING CART</h1>
+        <div class="cart-items">
+            <div class="item" data-price="1399">
+                <img src="/images/Mens OverShirt.jpg" alt="Men over-shirt">
+                <div class="item-details">
+                    <p>Men over-shirt</p>
+                </div>
+                <div class="item-quantity">
+                    <button class="quantity-btn minus-btn"> - </button>
+                    <span class="quantity"> 1 </span>
+                    <button class="quantity-btn plus-btn"> + </button>
+                </div>
+                <div class="item-price">
+                    <p class="price">Rs. 1,399/-</p>
+                </div>
+                <div class="item-delete">
+                    <a href="#">Delete</a>
+                </div>
+            </div>
+            <hr>
+            <div class="item" data-price="11999">
+                <img src="/images/shoes.jpg" alt="Nike SB dunks">
+                <div class="item-details">
+                    <p>Nike SB dunks</p>
+                </div>
+                <div class="item-quantity">
+                    <button class="quantity-btn minus-btn">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-btn plus-btn">+</button>
+                </div>
+                <div class="item-price">
+                    <p class="price">Rs. 11,999/-</p>
+                </div>
+                <div class="item-delete">
+                    <a href="#">Delete</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="order-summary">
+            <h2>Order Details:</h2>
+            <p>Subtotal: <span id="subtotal">Rs. 13,398/-</span></p>
+            <p>Delivery fees: <span>Free</span></p>
+            <h3>TOTAL: <span id="total">Rs. 13,398/-</span></h3>
+            <button class="pay-btn"><a href="/payment-method" target="_blank">pay now</a></button>
+        </div>
+
+        <div class="address">
+            <h2>Address:</h2>
+            <textarea placeholder="Enter details here..."></textarea>
+        </div>
+    </div>
+</body>
+</html>

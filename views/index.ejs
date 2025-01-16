@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .container {
+            background-color: #f4f4f9;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 50%;
+            margin: auto;
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the User API!</h1>
+        <p id="apiMessage">Loading message...</p>
+    </div>
+
+    <script>
+        // Fetching data from the backend (API)
+        fetch('http://localhost:3000/')
+            .then(response => response.text())
+            .then(data => {
+                // Render the response message
+                document.getElementById('apiMessage').textContent = data;
+            })
+            .catch(error => {
+                document.getElementById('apiMessage').textContent = 'Error: ' + error;
+            });
+    </script>
+</body>
+</html>

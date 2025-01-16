@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="/styles/payment.css">
+    <!-- <script src="payment.js" defer></script> -->
+</head>
+<body>
+    <div class="payment-container">
+        <div class="payment-section">
+            <h2>Payment</h2>
+            <hr>
+            <br>
+
+            <form action="/pay" method="post">
+
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" name="cardNumber" placeholder="1234 5678 9101 1121">
+                <br><br>
+
+                <div class="exp-cvv">
+                    <div>
+                        <label for="expiration-date">Expiration Date</label>
+                        <input type="date" id="expiration-date" name="expDate" placeholder="MM/YY">
+                    </div>
+                    <div>
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="123">
+                    </div>
+                </div>
+                <br>
+
+                <!-- <label>
+                    <input type="checkbox"> Save card details
+                </label> -->
+                <br><br>
+
+                <button type="submit" class="pay-btn">Pay ₹ <span id="pay-amount">13,497</span></button>
+            </form>
+
+            <p class="privacy-text">
+                Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our privacy policy.
+            </p>
+        </div>
+
+        <div class="summary-section">
+            <h2>Order Summary</h2>
+            <div class="order-item">
+                <img src="/images/Mens Grey Over Shirt.jpg" alt="Men over-shirt">
+                <p>Men over-shirt</p>
+                <span>₹ 1,399/-</span>
+            </div>
+            <div class="order-item">
+                <img src="/images/shoes.jpg" alt="Nike SB dunks">
+                <p>Nike SB dunks</p>
+                <span>₹ 11,999/-</span>
+            </div>
+
+            <label for="discount-code">Gift or discount code</label>
+            <div class="discount-code">
+                <input type="text" id="discount-code" placeholder="Enter code">
+                <button type="button" class="apply-btn" onclick="applyDiscount()">Apply</button>
+            </div>
+
+            <div class="order-totals">
+                <p>Subtotal <span id="subtotal">₹ 13,497</span></p>
+                <p>Shipping <span>Free</span></p>
+                <h3>Total <span id="total-amount">₹ 13,497</span></h3>
+                <p class="tax-info">Including ₹180 in taxes</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function applyDiscount() {
+            const discountCode = document.getElementById('discount-code').value.trim();
+            const totalAmountElement = document.getElementById('total-amount');
+            const payAmountElement = document.getElementById('pay-amount');
+            let totalAmount = 13497;
+
+            // Define valid discount codes and respective discounts
+            const discounts = {
+                "SAVE10": 0.10,
+                "SAVE20": 0.20,
+                "SAVE30": 0.30
+            };
+
+            if (discounts[discountCode]) {
+                const discountPercentage = discounts[discountCode];
+                const discountedAmount = totalAmount - (totalAmount * discountPercentage);
+
+                totalAmountElement.textContent = `₹ ${discountedAmount.toFixed(2)}`;
+                payAmountElement.textContent = discountedAmount.toFixed(2);
+
+                alert(`Discount applied! You saved ${(totalAmount * discountPercentage).toFixed(2)}.`);
+            } else {
+                alert("Invalid discount code. Please try again.");
+            }
+        }
+    </script>
+</body>
+</html>

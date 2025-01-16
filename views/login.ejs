@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login or Signup</title>
+    <link rel="stylesheet" href="/styles/login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="offer-banner">
+            <div class="offer-image">
+                <img src="/images/login-signup.jpg" alt="Offer Image">
+            </div>
+        </div>
+
+        <div class="form-container">
+            <h1>Login or <span class="highlight">Signup</span></h1>
+            <div class="input-box">
+                <span class="country-code">+91</span>
+                <input type="text" id="mobile-number" placeholder="Mobile Number" required>
+            </div>
+            <p id="validation-message" class="policy-text"></p> <!-- Error message -->
+            <p class="policy-text">
+                By continuing, I agree to the 
+                <a href="#">Terms of use</a> & 
+                <a href="#">privacy policy</a>
+            </p>
+            <button class="btn-continue" id="continue-btn" disabled><a href="/loggedin">Continue</a></button>
+            <p class="signup-text">Don't have an account? <a href="#">Signup</a></p>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

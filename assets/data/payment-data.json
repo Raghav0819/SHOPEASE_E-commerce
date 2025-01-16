@@ -1,0 +1,82 @@
+{
+    "pageTitle": "Payment Page",
+    "paymentSection": {
+      "heading": "Payment",
+      "methods": [
+        {
+          "id": "card",
+          "name": "Card",
+          "checked": true
+        },
+        {
+          "id": "bank",
+          "name": "Bank",
+          "checked": false
+        },
+        {
+          "id": "transfer",
+          "name": "Transfer",
+          "checked": false
+        }
+      ],
+      "formFields": {
+        "cardNumber": {
+          "label": "Card Number",
+          "placeholder": "1234 5678 9101 1121"
+        },
+        "expirationDate": {
+          "label": "Expiration Date",
+          "placeholder": "MM/YY"
+        },
+        "cvv": {
+          "label": "CVV",
+          "placeholder": "123"
+        },
+        "saveCardDetails": {
+          "label": "Save card details",
+          "checked": false
+        }
+      },
+      "payButton": {
+        "text": "Pay",
+        "amount": 13497,
+        "currency": "₹",
+        "link": "order-confirmed.html"
+      },
+      "privacyText": "Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our privacy policy."
+    },
+    "orderSummary": {
+      "heading": "Order Summary",
+      "items": [
+        {
+          "name": "Men over-shirt",
+          "image": "Figma/Mens Grey Over Shirt.jpg",
+          "price": 1399,
+          "currency": "₹"
+        },
+        {
+          "name": "Nike SB dunks",
+          "image": "Figma/shoes.jpg",
+          "price": 11999,
+          "currency": "₹"
+        }
+      ],
+      "discountCode": {
+        "label": "Gift or discount code",
+        "placeholder": "Enter code",
+        "buttonText": "Apply",
+        "validCodes": {
+          "SAVE10": 0.10,
+          "SAVE20": 0.20,
+          "SAVE30": 0.30
+        }
+      },
+      "totals": {
+        "subtotal": 13497,
+        "shipping": "Free",
+        "total": 13497,
+        "taxInfo": "Including ₹180 in taxes"
+      }
+    }
+  }
+  
