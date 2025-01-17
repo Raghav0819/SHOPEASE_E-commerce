@@ -54,6 +54,11 @@ Follow the steps below to run this project locally:
 - Enable order history and tracking features.
 - Implement advanced filtering and sorting for products.
 
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+
 ## Contributing
 Contributions are welcome! Please fork this repository and submit a pull request with your changes.
 
